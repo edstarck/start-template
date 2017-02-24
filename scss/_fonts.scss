@@ -1,0 +1,4 @@
+@import "bourbon";
+
+@include font-face("FranklinGothicDemi", "../fonts/FranklinGothicDemi/FranklinGothicDemi", $file-formats: woff);
+@include font-face("FranklinGothicBook", "../fonts/FranklinGothicBook/FranklinGothicBook", $file-formats: woff);
