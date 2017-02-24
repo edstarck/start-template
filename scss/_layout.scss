@@ -21,15 +21,6 @@ body {
   overflow: initial;
 }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: #666;
-}
-body input:required:valid,
-body textarea:required:valid {
-  color: #666;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -66,12 +57,6 @@ a {
   margin: 0 auto;
   padding: 0 30px;
 }
-
-/** ===========================
- *  Верхняя панель
- *  ===========================
-*/
-
 
 /** ===========================
  *  Слайдер
