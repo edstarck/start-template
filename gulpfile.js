@@ -70,14 +70,14 @@ gulp.task('styles', function () {
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(
         [
-              'Android 2.3',
-              'Android >= 4',
-              'Chrome >= 49',
-              'Firefox >= 49',
-              'Explorer >= 10',
-              'iOS >= 9.3',
-              'Opera >= 42',
-              'Safari >= 9.1'
+          'Android 2.3',
+          'Android >= 4',
+          'Chrome >= 49',
+          'Firefox >= 49',
+          'Explorer >= 10',
+          'iOS >= 9.3',
+          'Opera >= 42',
+          'Safari >= 9.1'
         ]
     ))
 	// .pipe(cleanCSS())
@@ -89,13 +89,7 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'./app/libs/modernizr/modernizr.js',
-		'./app/libs/jquery/jquery-1.11.2.min.js',
-    './app/libs/swiper/swiper.jquery.min.js',
-    './app/libs/scrollMagic/ScrollMagic.min.js',
-    './app/libs/greensock/TweenMax.min.js',
-    './app/libs/scrollMagic/animation.gsap.min.js',
-    './app/libs/popup/jquery.magnific-popup.min.js'
+    './app/libs/swiper/swiper.min.js'
 	])
 	.pipe(concat('libs.js'))
 	.pipe(uglify())
