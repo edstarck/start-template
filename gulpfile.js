@@ -1,16 +1,16 @@
 var gulp         = require('gulp'),
     rename       = require("gulp-rename"),
-		sass         = require('gulp-sass'),
-		autoprefixer = require('gulp-autoprefixer'),
-		cleanCSS     = require('gulp-clean-css'),
+    sass         = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    cleanCSS     = require('gulp-clean-css'),
     sourcemaps   = require('gulp-sourcemaps'),
     cached       = require('gulp-cached'),
     csscomb      = require('gulp-csscomb'),
-		rename       = require('gulp-rename'),
+    rename       = require('gulp-rename'),
     plumber      = require('gulp-plumber'),
-		browserSync  = require('browser-sync').create(),
-		concat       = require('gulp-concat'),
-		uglify       = require('gulp-uglify'),
+    browserSync  = require('browser-sync').create(),
+    concat       = require('gulp-concat'),
+    uglify       = require('gulp-uglify'),
     cheerio      = require('gulp-cheerio'),
     svgmin       = require('gulp-svgmin'),
     svgSymbols   = require('gulp-svg-symbols'),
@@ -80,8 +80,7 @@ gulp.task('styles', function () {
           'Safari >= 9.1'
         ]
     ))
-	// .pipe(cleanCSS())
-  .pipe(csscomb())
+	.pipe(cleanCSS())
   .pipe(sourcemaps.write())
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.stream());
